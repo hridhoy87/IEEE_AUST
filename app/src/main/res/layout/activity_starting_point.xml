@@ -13,5 +13,20 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:text="@string/HiAUST"
+        android:id="@+id/tvTitleSP"
+        android:layout_centerInParent="true"
+        android:textColor="@android:color/holo_orange_dark"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bStartSong"
+        android:text="@string/start_the_song"
+        android:layout_below="@+id/tvTitleSP"/>
+<Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bStopSong"
+        android:text="@string/start_the_song"
+        android:layout_below="@+id/bStartSong"/>
 </RelativeLayout>

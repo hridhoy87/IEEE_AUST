@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">IEEE_AUST</string>
+    <string name="start_the_song">Start The Song</string>
+    <string name="HiAUST">Hi Good People of AUST!</string>
 </resources>
