@@ -13,20 +13,41 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:elevation="5dp"
+        android:shadowColor="#fff"
+        android:textSize="30px"
         android:text="@string/HiAUST"
         android:id="@+id/tvTitleSP"
-        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="50dp"
         android:textColor="@android:color/holo_orange_dark"/>
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:elevation="9dp"
+        android:background="@drawable/rect"
         android:id="@+id/bStartSong"
         android:text="@string/start_the_song"
         android:layout_below="@+id/tvTitleSP"/>
-<Button
+    <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:elevation="9dp"
+        android:background="@drawable/rect"
         android:id="@+id/bStopSong"
-        android:text="@string/start_the_song"
+        android:text="@string/stop_the_song"
+        android:layout_marginTop="40px"
         android:layout_below="@+id/bStartSong"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="9dp"
+        android:background="@drawable/rect"
+        android:id="@+id/bNextIntent"
+        android:text="Next Intent"
+        android:layout_marginTop="40px"
+        android:layout_below="@+id/bStopSong"/>
+
 </RelativeLayout>
