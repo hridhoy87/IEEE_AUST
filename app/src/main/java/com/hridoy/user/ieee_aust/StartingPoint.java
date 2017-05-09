@@ -3,6 +3,7 @@ package com.hridoy.user.ieee_aust;
 import android.app.Activity;
 import android.app.ActivityOptions;
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.media.MediaPlayer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -10,11 +11,15 @@ import android.transition.Explode;
 import android.view.View;
 import android.view.Window;
 import android.widget.Button;
+import android.widget.TextView;
 
 public class StartingPoint extends Activity {
 
     MediaPlayer creed;
     Button start,stop,newActivity;
+    TextView textView;
+    Typeface typeface;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,6 +27,8 @@ public class StartingPoint extends Activity {
         setContentView(R.layout.activity_starting_point);
         initialize();
         //playSong();
+        textView.setTypeface(typeface);
+        //textView.setTextSize(10);
     }
 
     private void initialize() {
@@ -46,6 +53,8 @@ public class StartingPoint extends Activity {
                 onSomeButtonClicked();
             }
         });
+        textView=(TextView)findViewById(R.id.tvTitleSP);
+        typeface=Typeface.createFromAsset(getAssets(),"fonts/garamond.ttf");
     }
 
     private void onSomeButtonClicked() {
